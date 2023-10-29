@@ -1,0 +1,90 @@
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #000;
+    overflow: hidden;
+    font-family: Arial, sans-serif;
+    color: #fff;
+}
+
+.particles {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,0.8) 100%);
+}
+
+.container {
+    text-align: center;
+}
+
+@keyframes rainbow {
+    0% { color: red; }
+    5% { color: orange; }
+    15% { color: yellow; }
+    20% { color: green; }
+    40% { color: blue; }
+    60% { color: indigo; }
+    80% { color: violet; }
+    100% { color: red; }
+}
+
+.title {
+    font-size: 36px;
+    position: relative;
+    display: inline-block;
+    animation: rainbow 3s infinite;
+}
+
+
+.modern-input {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 300px;
+    color: #000;
+    background-color: #fff;
+    border: 1px solid #555;
+}
+
+/* Existing CSS Code... */
+
+.invalid-input {
+    animation: shake 0.5s;
+    border: 2px solid red;
+}
+
+@keyframes shake {
+    10%, 90% {
+        transform: translateX(-1px);
+    }
+    20%, 80% {
+        transform: translateX(2px);
+    }
+    30%, 50%, 70% {
+        transform: translateX(-4px);
+    }
+    40%, 60% {
+        transform: translateX(4px);
+    }
+}
+
+.enter-button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #555;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.enter-button:hover {
+    background-color: #777;
+}
