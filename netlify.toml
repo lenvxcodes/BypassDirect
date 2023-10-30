@@ -1,0 +1,5 @@
+[[redirects]]
+    from = "/favicon.ico"
+    to = "https://visuallysynced.xyz/favicon.ico"
+    status = 200
+    force = true
